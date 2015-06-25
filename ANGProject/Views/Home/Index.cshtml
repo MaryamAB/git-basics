@@ -1,0 +1,30 @@
+﻿
+<!DOCTYPE html>
+
+<html data-ng-app="">
+<head><script type="text/javascript" >
+    function MYFunc($scope)
+    {
+        $scope.MyFamily = "ABDOLAHZADEH";
+    }
+    </script>
+
+    <title></title>
+</head>
+<body>
+
+    <script src="../Script/angular.min.js"></script>
+    @*<script src="~/Script/angular.min.js"></script>*@
+    name:
+    <br />
+    <div ng-controller="MYFunc">
+        <input type="text" data-ng-model="MyFamily" />{{ MyFamily }}
+    </div>
+
+    <div class="container" data-ng-init="friends=['Mary','Sara',Mina','Mahta']" >
+        <ul>
+            <li ng-repeat="name1 in friends">{{name1}}</li>
+        </ul>
+    </div>
+</body>
+</html>
